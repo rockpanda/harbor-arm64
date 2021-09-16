@@ -46,5 +46,10 @@ A:https://xie.infoq.cn/article/07b3a4de1062852e23395b19e
 
 3、registry       | sudo: unable to change expired password: Authentication token manipulation error
 
-A:https://xie.infoq.cn/article/07b3a4de1062852e23395b19e 
+A:问题跟https://xie.infoq.cn/article/07b3a4de1062852e23395b19e ，直接添加以下内容即可
+`
+      - type: bind
+        source: /opt/harbor-log-etc/shadow
+        target: /etc/shadow
+`
 
